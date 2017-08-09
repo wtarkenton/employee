@@ -7,6 +7,9 @@
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script src="http://momentjs.com/downloads/moment.js"></script>
+
 </head>
 <body>
 <div class="container">
@@ -28,15 +31,7 @@
         <th>Total Billed ($)</th>
       </tr>
     </thead>
-    <tbody>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-      </tr>
+    <tbody id="forAdditions">
     </tbody>
   </table>
   	</div>
@@ -63,13 +58,14 @@
 					<input type="number" class="form-control" id="MonthlyRate">
 			 	</div>
 			 	</form>
-			 	<button type="button" class="btn btn-success">Success</button>
+			 	<button type="button" class="btn btn-success" id="submit">Success</button>
 			</div>
 	</div>
   </div>
   </div>
 
-
+<script src="app.js"></script>
 
 </body>
+
 </html>
